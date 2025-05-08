@@ -1,7 +1,7 @@
 {
   "name": "react-native-real-sheets",
   "version": "0.1.0",
-  "description": "A bottom sheet with all the functionalities needed",
+  "description": "A fully featured bottom sheet component for React Native",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
   "exports": {
@@ -32,7 +32,7 @@
     "!**/.*"
   ],
   "scripts": {
-    "example": "yarn workspace react-native-real-sheets-example",
+    "example": "yarn workspace react-native-real-sheets-example start",
     "test": "jest",
     "typecheck": "tsc",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
@@ -67,6 +67,7 @@
     "@react-native/babel-preset": "0.78.2",
     "@react-native/eslint-config": "^0.78.0",
     "@release-it/conventional-changelog": "^9.0.2",
+    "@shopify/flash-list": "^1.8.0",
     "@types/jest": "^29.5.5",
     "@types/react": "^19.0.12",
     "commitlint": "^19.6.1",
@@ -79,12 +80,15 @@
     "react": "19.0.0",
     "react-native": "0.79.2",
     "react-native-builder-bob": "^0.40.10",
+    "react-native-gesture-handler": "^2.25.0",
     "release-it": "^17.10.0",
     "typescript": "^5.2.2"
   },
   "peerDependencies": {
     "react": "*",
-    "react-native": "*"
+    "react-native": "*",
+    "react-native-gesture-handler": "*",
+    "react-native-safe-area-context": "*"
   },
   "workspaces": [
     "example"
